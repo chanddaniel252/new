@@ -1,0 +1,106 @@
+circle{
+    fill: none;
+      
+}
+
+.loader svg{
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.ideal{
+    
+    stroke-width: 10px;
+}
+.progress{
+
+    stroke: white;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke-dasharray: 800;
+    stroke-dashoffset: -725;
+    
+    animation: skills 2s linear;
+    animation-fill-mode: forwards;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress2{
+
+    stroke: white;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke-dasharray: 800;
+    stroke-dashoffset: -725;
+    
+    animation: skills2 2s linear;
+    animation-fill-mode: forwards;
+}
+
+.progress3{
+
+    stroke: white;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke-dasharray: 800;
+    stroke-dashoffset: -725;
+    
+    animation: skills3 2s linear;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+svg text{
+   font-size: 20px;
+   transform-origin: center;
+   transform: rotateZ(180deg);
+}
+
+@keyframes skills {
+
+    0% { stroke-dashoffset: -725;}
+    100% {stroke-dashoffset: -80;}
+    
+}
+@keyframes skills2 {
+
+    0% { stroke-dashoffset: -725;}
+    100% {stroke-dashoffset: -200;}
+    
+}
+
+@keyframes skills3 {
+
+    0% { stroke-dashoffset: -725;}
+    100% {stroke-dashoffset: -300;}
+    
+}
+
+.loader{
+    position: relative;
+    height:55%;
+    display:flex;
+    align-items: center;
+    justify-content:'center';
+    flex-direction: column;
+    
+   
+}
+
+.progress::before{
+
+    content: '90%';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: calc(10% + 20px);
+    color: white;
+    font-weight: 600;
+    
+
+    
+}

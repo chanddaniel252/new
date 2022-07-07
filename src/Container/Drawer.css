@@ -1,0 +1,58 @@
+.main{
+    display: flex;
+    flex: 1;
+  
+    background-image: linear-gradient(to top right, blueviolet, rgb(97, 80, 80));
+    
+    justify-content:end;
+  }
+  
+  
+  .drawer1{
+    width: clamp(200px,40%,600px);
+    height: 100vh;
+    background: linear-gradient(to bottom right,red, blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+    z-index: 3;
+    
+  }
+  
+  .drawer2{
+    width: clamp(200px,40%,600px);
+    height: 100vh;
+    background: linear-gradient(to bottom right,red, blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    border-right: 2px solid white;
+  }
+
+
+
+
+ 
+.container{
+  margin: calc(3% + 2px);
+}
+
+  a{
+    cursor: default;
+    font-size: calc(20% + 30px);
+    text-transform: uppercase;
+    margin: calc(3% + 2px);
+    color: white;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+  }
